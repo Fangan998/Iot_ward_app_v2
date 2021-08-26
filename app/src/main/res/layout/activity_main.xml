@@ -18,19 +18,20 @@
         android:id="@+id/tvID"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:text="器材編號"
+        android:text="@string/Equ_num"
         android:textSize="20sp" />
 
     <Spinner
         android:id="@+id/spID"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/tvResult"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:text="器材資訊"
+        android:text="@string/equ_inform"
         android:textSize="20sp" />
 
 
@@ -74,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:insetLeft="60dp"
-            android:text="Switch" />
+            android:text="@string/swt" />
 
         <Button
             android:id="@+id/btMap"
@@ -82,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:insetLeft="140dp"
-            android:text="Map" />
+            android:text="@string/map" />
     </LinearLayout>>
 
 </LinearLayout>

@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
     private int rssi = this.rssi;
     private int major = this.major;
     private int minor = this.minor;
+
     private Spinner.OnItemSelectedListener spIDListener = new Spinner.OnItemSelectedListener(){
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
