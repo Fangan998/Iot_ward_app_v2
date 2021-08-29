@@ -83,7 +83,12 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     Integer rssi = dataSnapshot.getValue(Integer.class);
-                    tvrssi.setText("RSSI : " + rssi.toString());
+                    try {
+                        tvrssi.setText("RSSI : " + rssi.toString());
+                    }catch (Exception RSSI_not_found)
+                    {
+                        tvrssi.setText("RSSI找不到，請再試一次");
+                    }
                 }
                 @Override
                 public void onCancelled(DatabaseError error) {
@@ -96,7 +101,12 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     Integer major = dataSnapshot.getValue(Integer.class);
-                    tvmajor.setText("Major : " + major.toString());
+                    try {
+                        tvmajor.setText("Major : " + major.toString());
+                    }catch (Exception RSSI_not_found)
+                    {
+                        tvmajor.setText("Major找不到，請再試一次");
+                    }
                 }
                 @Override
                 public void onCancelled(DatabaseError error) {
@@ -109,7 +119,12 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     Integer minor = dataSnapshot.getValue(Integer.class);
-                    tvminor.setText("Minor : " + minor.toString());
+                    try {
+                        tvminor.setText("Minor : " + minor.toString());
+                    }catch (Exception RSSI_not_found)
+                    {
+                        tvminor.setText("Minor找不到，請再試一次");
+                    }
                 }
                 @Override
                 public void onCancelled(DatabaseError error) {
